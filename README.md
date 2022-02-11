@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/weichen-huang/climatenets">
-    <img src="images/climatenets_logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">ClimateNets: Using AI to Fight Climate Change</h3>
