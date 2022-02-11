@@ -68,7 +68,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `weichen-huang`, `climatenets`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+In this project, we focus on short-term extreme precipitation forecasting using deep neural networks, including convolutions and transformers. In particular, we propose a self-attention augmented convolution mechanism for extreme precipitation forecasting, systematically combining attention scores with traditional convolutions to enrich feature data and reduce the expected errors of the results.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -89,31 +89,35 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Follow the following instructions and install a few software packages. Then Create a conda env and start installation of library dependencies. Download the required datasets from the link below before training models.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Install a few software packages before you get started.
+* conda env
   ```sh
-  npm install npm@latest -g
+  conda env update --file ./environment.yml --prune [--debug]
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/weichen-huang/climatenets.git
    ```
-3. Install NPM packages
+2. Install python dependency packages
    ```sh
-   npm install
+   conda env update --file ./environment.yml --prune [--debug]
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Download the following datasets -
+   ```sh
+   PRISM - https://ftp.prism.oregonstate.edu/daily/ppt/
+   NCEP/NCAR Reanalysis - https://psl.noaa.gov/data/gridded/data.ncep.reanalysis.html
+   Global Historical Climatology Network daily (GHCNd) - https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily
+   ```
+4. Training and evaluating models
+   ```sh
+   python train.py
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -123,9 +127,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+TODO add more details
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://github.com/weichen-huang/climatenets.git)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -148,10 +152,7 @@ See the [open issues](https://github.com/weichen-huang/climatenets/issues) for a
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+TODO add more details
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -175,7 +176,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Weichen Huang - [@twitter_handle](https://twitter.com/twitter_handle) - weichen.huang.2022@gmail.com
 
 Project Link: [https://github.com/weichen-huang/climatenets](https://github.com/weichen-huang/climatenets)
 
@@ -185,6 +186,8 @@ Project Link: [https://github.com/weichen-huang/climatenets](https://github.com/
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
+
+TODO add more details
 
 * []()
 * []()
